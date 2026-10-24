@@ -1,0 +1,18 @@
+#outro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+img{
+    max-width: 20%;
+    height: auto;
+    margin: 30px;
+}
+
+@media (max-width: 600px){
+    #outro{
+        flex-direction: column;
+    }
+}
