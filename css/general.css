@@ -99,6 +99,7 @@ article p{
     }
     nav{
         min-width: fit-content;
+        margin-left: 20px;
     }
 }
 
@@ -135,11 +136,11 @@ article p{
     
     nav{
         position: sticky;
-        top:0;
+        top:50px;
         width:90%;
-        margin: 100px auto 0;
+        margin: 30px auto 50px;
         transform:none;
-        padding: 50px 0px 0px;
+        padding: 10px 0px 0px;
         left:auto;
         max-width: none;
     }

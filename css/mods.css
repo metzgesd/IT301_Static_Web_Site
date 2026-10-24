@@ -1,0 +1,24 @@
+#flexparent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+#flexchild{
+    background-color: #ebebe4;
+    border: solid 5px #16171c;
+    color: #b81104;
+    border-radius: 10px;
+    text-align: center;
+    margin:30px;
+    flex: 1 1 0;
+}
+img{
+    max-width: 90%;
+}
+
+@media (max-width: 600px){
+    #flexparent{
+        flex-direction: column;
+    }
+}
