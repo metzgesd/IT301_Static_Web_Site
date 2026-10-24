@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     flex-grow: 1;
 }
-#flexchild{
+.flexchild{
     background-color: #ebebe4;
     border: solid 5px #16171c;
     color: #b81104;
