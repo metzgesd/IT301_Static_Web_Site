@@ -1,11 +1,13 @@
 body{
+    position: relative;
     background-color: #fcd116;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    height: 200vh;
+    min-height: 100vh;
     text-align: center;
+    margin: 0px; 
 }
 
 header{
@@ -14,6 +16,11 @@ header{
     color: #b81104;
     border-radius: 10px;
     text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 30px;
 }
 
 nav{
@@ -48,14 +55,15 @@ nav ul li a{
 }
 
 footer{
-    position: fixed;
+    position: absolute;
     background-color: #16171c;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
+    margin:0px;
 }
 
 footer p{
@@ -65,7 +73,35 @@ footer p{
 }
 
 
+main{
+    padding-bottom: 70px;
+}
+
+article{
+    background-color: #ebebe4;
+    border: solid 5px #16171c;
+    color: #b81104;
+    border-radius: 10px;
+    text-align: center;
+    margin:30px
+}
+
+article p{
+    margin: 20px
+}
+
+
 /* Media queries */
+
+@media (min-width: 1201px){
+    #nonhead{
+        display: flex;
+    }
+    nav{
+        min-width: fit-content;
+    }
+}
+
 @media (max-width: 1200px){
     nav{
         position: relative;
@@ -78,9 +114,6 @@ footer p{
         flex-direction: row;
         justify-content: space-around;
     }
-    nav ul li{
-
-    }
 }
 
 @media (max-width: 600px){
@@ -89,14 +122,12 @@ footer p{
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         padding-bottom: 10px;
-        margin-bottom: 0px;
         position: absolute;
         left:50%;
         transform: translateX(-50%);
-        top: 10px;
+        top: 0px;
         width:90%;
-        margin-left:auto;
-        margin-right:auto;
+        margin: 0px auto;
         z-index: 1;
         padding-left:0;
         padding-right: 0;
@@ -106,9 +137,9 @@ footer p{
         position: sticky;
         top:0;
         width:90%;
-        margin: 80px auto 0;
+        margin: 100px auto 0;
         transform:none;
-        padding: 5px 7px 0px;
+        padding: 50px 0px 0px;
         left:auto;
         max-width: none;
     }
